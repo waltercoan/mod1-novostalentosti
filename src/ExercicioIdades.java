@@ -19,6 +19,22 @@ public class ExercicioIdades {
                 System.out.println("IDOSO");
             }
         }
+        /*if (idade > 0 && idade <=20){
+            System.out.println("JOVEM");
+        }
+        if (idade > 20 && idade <= 60){
+            System.out.println("ADULTO");
+        }
+        if (idade > 60){
+            System.out.println("IDOSO");
+        }*/
+        /*if (idade <= 20){
+            System.out.println("JOVEM");
+        }else if (idade <=60){
+            System.out.println("ADULTO");
+        }else {
+            System.out.println("IDOSO");
+        }*/
     }
 }
 
