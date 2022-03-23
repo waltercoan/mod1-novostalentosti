@@ -14,7 +14,7 @@ tempfahrenheit = tempcelsius x 1.8f + 32f
 SAIDA
 -tempfahrenheit
 */
-public class Exemplo18 {
+public class Exercicio18 {
     public static void main(String[] args) {
        float tempcelsius=0;
        float tempfahrenheit = 0;
