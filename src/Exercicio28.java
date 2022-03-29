@@ -1,19 +1,18 @@
 import java.util.Scanner;
-
 public class Exercicio28 {
     public static void main(String[] args) {
         int idade = 0;
+        //System.in - receba dados do buffer de teclado
         Scanner leitor = new Scanner(System.in);
-
-        System.out.println("Digite a sua idade");
+        System.out.println("Digite a idade");
         idade = Integer.parseInt(leitor.nextLine());
-
         if (idade >= 18) {
-            //ENTAO SIM (THEN)
-            System.out.println("Voce é maior de idade");
+            //então (sim - verdade)
+            System.out.println("Maior de idade");
         }else{
-            //SENAO NÃO (ELSE)
-            System.out.println("Voce é menor de idade");
+            //senão (não - false)
+            System.out.println("Não é maior de idade");
         }
+
     }
 }
