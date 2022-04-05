@@ -6,9 +6,12 @@ public class LerTexto {
   public static void main(String[] args) {
       
         try{
-            Scanner leitor = new Scanner(new File("./src/texto.txt"));
+            Scanner leitor = new Scanner(new File("./src/arquivo.csv"));
             while(leitor.hasNext()){
-                System.out.println(leitor.nextLine());
+                //System.out.println(leitor.nextLine());
+                for(String umValor : leitor.nextLine().split(";")){
+                    System.out.println(umValor);
+                }
             }
             leitor.close();
         } catch (FileNotFoundException e) {
