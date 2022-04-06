@@ -13,8 +13,8 @@ public class LerArquivo {
         try{
             SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyHH:mm");
             Scanner leitor = new Scanner(new File("./src/outroarquivo.csv"));
+            leitor.nextLine(); //pulando a primeira linha (menos um panda no mundo)
             while(leitor.hasNext()){
-                leitor.nextLine(); //pulando a primeira linha (menos um panda no mundo)
                 String[] linhaArquivo = leitor.nextLine().replace("\"","").split(","); //aqui foi outro panda....
                 float mult = Float.parseFloat(linhaArquivo[0]);
                 String  resul = linhaArquivo[1];

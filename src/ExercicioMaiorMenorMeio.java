@@ -12,15 +12,44 @@ public class ExercicioMaiorMenorMeio {
         num3 = Integer.parseInt(leitor.nextLine());
 
         if (num1 > num2) {
-            // aqui1
+            // então = ESQUERDO
             if (num1 > num3) {
-                // aqui2 ||||||||||||||||||
+                System.out.println("O maior e " + num1);
+                if (num2 > num3){
+                    //entao
+                    System.out.println("O do meio e " + num2);
+                    System.out.println("O menor e " + num3);
+                }else{
+                    //senao (num2 > num3)
+                    System.out.println("O do meio e " + num3);
+                    System.out.println("O menor e " + num2);
+                }
             } else {
-                // aqui3 |
+                // senao (num1 > num3)
+                System.out.println("O maior e " + num3);
+                System.out.println("O do meio e " + num1);
+                System.out.println("O menor e " + num2);
             }
         } else {
-            // aqui4
-
+            // senao (num1 > num2)
+            if (num2 > num3){
+                //entao
+                System.out.println("O maior e " + num2);
+                if (num1 > num3){
+                    //entao
+                    System.out.println("O do meio e " + num1);
+                    System.out.println("O menor e " + num3);
+                }else{
+                    //senao
+                    System.out.println("O do meio e" + num3);
+                    System.out.println("O menor e " + num1);
+                }
+            }else{
+                //senao
+                System.out.println("O maior e "+ num3);
+                System.out.println("O do meio e "+ num2);
+                System.out.println("O menor e "+ num1);
+            }
         }
     }
 }
