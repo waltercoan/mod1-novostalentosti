@@ -24,7 +24,8 @@ public class ExemploEstruturaDeDados2 {
         System.out.println("Digite UNIVILLE");
         String entrada = leitor.nextLine();
 
-        if(nome2.equalsIgnoreCase(entrada)){
+        // verfique se os valores são iguais ignorando maiusculo e minusculo
+        if(nome2.equalsIgnoreCase(entrada)){ 
             System.out.println("Sao iguais");
         }else{
             System.out.println("Não são iguais");
