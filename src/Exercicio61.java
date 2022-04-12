@@ -25,7 +25,6 @@ public class Exercicio61 {
             }
             contador++;
             soma += umnumero;
-
         }while(umnumero >= 0);      
         media = soma / contador;
         System.out.println("A soma dos numeros e " + soma);
