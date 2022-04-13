@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Exemplo {
     public static void main(String[] args) {
+
+        System.out.println(true);
+
         Scanner leitor = new Scanner(System.in);
         int numDigitado = 0;
         do{
