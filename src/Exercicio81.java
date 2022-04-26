@@ -41,5 +41,30 @@ public class Exercicio81 {
         }
 
         System.out.println(Arrays.toString(uniao));
+
+        //a diferença entre X e Y (todos os elementos de X que não existam em Y)
+        System.out.println("*****DIFERENCA*****");
+        proxlivre = 0;
+        int[] diferenca = new int[10];
+        for(int i=0; i<10 ; i++){
+            System.out.println("diff X: " + x[i]);
+            boolean achei = false;
+            for(int j=0;j<10;j++){
+                System.out.println("\tdiff Y: " + y[j]);
+                if(x[i] == y[j]){
+                    System.out.println("ACHEI IGUAL");
+                    achei = true;
+                    break;
+                }
+            }
+            if(!achei){
+                diferenca[proxlivre] = x[i];
+                proxlivre++;
+            }
+        }
+        System.out.println(Arrays.toString(diferenca));
+
+
+
     }
 }

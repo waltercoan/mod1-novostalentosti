@@ -24,5 +24,8 @@ public class ExemploDecisao {
             System.out.println("O numero e menor que DEZ");
         }
         System.out.println("FIM DO PROGRAMA");
+
+
+
     }
 }
