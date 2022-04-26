@@ -63,8 +63,36 @@ public class Exercicio81 {
             }
         }
         System.out.println(Arrays.toString(diferenca));
+        // a soma entre X e Y (soma de cada elemento de X com o elemento de mesma posição em Y)
+        System.out.println("*****SOMA*****");
+        int[] soma = new int[10];
+        for(int i=0; i<10; i++){
+            soma[i] = x[i] + y[i];
+        }
+        System.out.println(Arrays.toString(soma));
+        //- produto entre X e Y (multiplicação de cada elemento de X com o elemento de mesma posição em Y)
+        System.out.println("*****PRODUTO*****");
+        int[] produto = new int[10];
+        for(int i=0;i<10;i++){
+            produto[i] = x[i] * y[i];
+        }
+        System.out.println(Arrays.toString(produto));
 
-
-
+        //a interseção entre X e Y (apenas os elementos que aparecem nos dois vetores)
+        System.out.println("*****interseção*****");
+        int[] intersecao = new int[10];
+        proxlivre = 0;
+        for(int i=0;i<10;i++){
+            System.out.println("inter X:" + x[i]);
+            for(int j=0;j<10;j++){
+                System.out.println("\tinter Y:" + y[j]);
+                if(x[i] == y[j]){
+                    intersecao[proxlivre] = x[i];
+                    proxlivre++;
+                    break;
+                }
+            }
+        }
+        System.out.println(Arrays.toString(intersecao));
     }
 }
